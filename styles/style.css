@@ -1,11 +1,312 @@
-/* Font style = open sans for website */
-@import url('https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap');
-
-/* some default styles */
-*{
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
+/* Header section style */
+body {
+  font-family: "Caveat", cursive;
+  font-family: "Open Sans", sans-serif;
+}
+.title {
+  color: #181818;
+  font-family: Open Sans;
+  font-size: 45px;
+  font-style: normal;
+}
+.txt-color {
+  color: #fd6e0a;
+}
+nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin: 0 200px;
+}
+nav > ul {
+  display: flex;
+  align-items: center;
+}
+nav li {
+  list-style: none;
+  margin-right: 30px;
+}
+nav a {
+  color: #474747;
+  text-decoration: none;
 }
 
-/*  */
+.btn-primary {
+  border-radius: 5px;
+  background: #fd6e0a; /* Original background color */
+  font-size: 20px;
+  font-style: normal;
+  font-weight: 700;
+  color: #fff; /* Original font color */
+  border: none;
+  padding: 15px 35px;
+  transition: background 0.3s ease, color 0.3s ease, box-shadow 0.3s ease; /* Smooth transition */
+}
+
+.btn-primary:hover {
+  background: #fff; /* Background color on hover */
+  color: #fd6e0a; /* Font color on hover */
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.3); /* Add shadow on hover */
+  cursor: pointer; /* Change cursor to pointer */
+}
+
+.btn-primary a {
+  color: #fff; /* Ensure the text color is white */
+  text-decoration: none; /* Remove underline */
+  display: block; /* Make the link cover the button */
+  height: 100%; /* Ensure it fills the button height */
+  width: 100%; /* Ensure it fills the button width */
+}
+.btn-download, .btn-contact {
+  display: inline-block; /* Make anchor behave like a button */
+  border-radius: 5px;
+  background: #fd6e0a; /* Original background color */
+  font-size: 20px;
+  font-style: normal;
+  font-weight: 700;
+  color: #fff; /* Original font color */
+  text-decoration: none; /* Remove underline from anchor */
+  padding: 15px 35px;
+  transition: background 0.3s ease, color 0.3s ease, border 0.3s ease; /* Smooth transition */
+}
+
+.btn-download:hover, .btn-contact:hover {
+  background: #fff; /* Background color on hover */
+  color: #fd6e0a; /* Font color on hover */
+  border: 2px solid #fd6e0a; /* Optional: add a border */
+  cursor: pointer; /* Change cursor to pointer */
+}
+
+
+.header {
+  background-color: #fff8f3;
+  background-image: url("../assets/header_bg.png"),
+    url("../assets/developer.png");
+  background-repeat: no-repeat;
+  background-position: bottom right, top left;
+}
+.banner {
+  padding: 30px 30px 0px 150px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.banner-content {
+  max-width: 585px;
+}
+.banner .profile {
+  width: 800px;
+  height: 700px;
+}
+.banner-greeting {
+  font-size: 45px;
+  color: #474747;
+  margin-bottom: 0;
+}
+.banner-title {
+  font-size: 85px;
+  font-weight: 700;
+  color: #181818;
+  margin-top: 5px;
+  margin-bottom: 20px;
+}
+
+.banner-description {
+  color: #757575;
+  font-size: 18px;
+  font-weight: 400;
+  line-height: 30px;
+  margin-bottom: 30px;
+}
+
+/* main section style */
+main {
+  max-width: 1140px;
+  margin: 0 auto;
+}
+main section {
+  margin-top: 130px;
+}
+/* about section */
+.about {
+  padding: 150px;
+  border-radius: 10px;
+  background: #fff8f3;
+  margin: 130px 0;
+}
+.title {
+  color: #181818;
+  text-align: center;
+  font-size: 35px;
+  font-weight: 700;
+}
+.description {
+  color: #757575;
+  text-align: center;
+  font-size: 18px;
+  font-weight: 400;
+  margin-bottom: 50px;
+}
+.about-info-container {
+  display: flex;
+  justify-content: space-around;
+}
+.about-info {
+  text-align: center;
+}
+
+.info-title {
+  color: #757575;
+}
+.info-description {
+  color: #000000;
+  font-weight: bold;
+}
+.what-i-do {
+  padding: 30px 150px;
+}
+.skills-container {
+  display: flex;
+  gap: 24px;
+}
+.skills {
+  padding: 30px;
+  border-radius: 5px;
+  background: #fff;
+  box-shadow: 0px 6px 50px 0px rgba(0, 0, 0, 0.06);
+}
+.skill-title {
+  color: #181818;
+  font-size: 20px;
+  font-weight: 700;
+}
+.skill-description {
+  color: #757575;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 28px;
+}
+
+/* resume section style */
+
+.resume-column-title {
+  color: #474747;
+  font-size: 30px;
+  font-weight: 700;
+}
+.resume-container {
+  display: flex;
+  gap: 100px;
+}
+.resume-item-title {
+  color: #474747;
+  font-size: 25px;
+  font-weight: 700;
+  margin-bottom: 10px;
+}
+.resume-item-institute {
+  color: #757575;
+  font-size: 20px;
+  font-weight: 600;
+  margin-bottom: 20px;
+  margin-top: 0px;
+}
+.resume-item-description {
+  color: #757575;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 28px;
+  margin-bottom: 30px;
+}
+.download-cv {
+  text-align: center;
+  margin-top: 50px;
+}
+
+/* footer section style */
+
+footer {
+  display: flex;
+  background: #fff8f3;
+  padding: 130px 200px;
+  margin-top: 100px;
+  gap: 100px;
+}
+.footer-column {
+  width: 50%;
+}
+.contact input[type="text"],
+.contact input[type="email"],
+textarea {
+  display: block;
+  margin-bottom: 25px;
+  border-radius: 5px;
+  background: #fff;
+  padding: 18px 35px;
+  color: #757575;
+  font-size: 16px;
+  font-weight: 400;
+  border: none;
+  width: 100%;
+}
+.social-links a {
+  margin-right: 25px;
+}
+.social-links {
+  text-align: center;
+}
+
+/* media query */
+
+@media screen and (max-width: 576px) {
+  .header {
+    background-image: none;
+  }
+  nav,
+  nav > ul,
+  .banner,
+  .skills-container,
+  .resume-container,
+  footer,
+  .about-info-container {
+    flex-direction: column;
+    /* text-align: center; */
+  }
+  footer,
+  .about {
+    padding: 10px;
+  }
+  .footer-column {
+    width: 100%;
+  }
+  .banner .profile {
+    width: 250%;
+    height: 250%;
+  }
+  .banner {
+    padding: 100px;
+  }
+  .btn-primary {
+    margin-bottom: 15px;
+  }
+  nav > ul {
+    gap: 15px;
+  }
+
+  .what-i-do {
+    padding: 20px;
+  }
+  .contact input[type="text"],
+  .contact input[type="email"],
+  textarea {
+    width: 80%;
+  }
+}
+@media screen and (min-width: 576px) and (max-width: 992px) {
+  footer {
+    padding: 30px;
+  }
+  .btn-primary {
+    margin-bottom: 15px;
+  }
+}
